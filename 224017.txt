@@ -1,0 +1,40 @@
+Дел 2:
+	13. PS C:\Users\DELL\SI_2025_lab1_224017> git fetch origin
+	- ги преземам сите гранки што сум ги креирала преку GitHub проектот
+	14. git checkout filter-tasks-by-category
+	- се префрлам на гранката filter-tasks-by-category
+	15. notepad SI2025Lab1Main.java
+	- ја имплементирам функцијата за проблемот во јава кодот
+	16. git add .
+	- ги додадавам промените во локалното Git repository пред да направам commit
+		git commit -m "Implemented findAllCompletedTasks"
+	- правам commit 
+	17. git push origin find-all-completed-tasks
+	- ја испраќам гранката на GitHub
+	22. git pull origin master
+	- ја повлекува најновата верзија на master гранката од origin и ја спојувам со локалната master гранка
+		git checkout master
+	- ја префрлам тековната гранка на master
+		git merge 3-list-tasks-sorted-by-name
+	- ги спојувам промените од гранката 3-list-tasks-sorted-by-name во master
+		git push -u origin master
+	- ги испраќа споените промени од master во origin
+	23. git checkout master        
+	- правам проверка дали сум на master гранката
+		git pull origin master     
+	- ги влечам последните промени од GitHub
+		git push origin master 
+	- ги ставам локалните примени во GitHub
+
+	24. git log --oneline --graph --all > logs.txt
+	- ја зачувувам целата commit историја во граф формат во logs.txt
+		echo > 224017.txt
+	- правам INDEX.txt фајл
+		notepad 224017.txt
+	- ја отварам во notepad
+		git add .
+	- ги додадавам промените во локалното Git repository пред да направам commit
+		git commit -m "Final commit"
+	- правам конечен commit
+		git push origin master
+	- ги испраќа промените во origin
